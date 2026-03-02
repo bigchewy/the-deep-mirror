@@ -15,7 +15,7 @@ export default async function FaqPage() {
       ) : (
         <div className="space-y-6">
           {posts.map((post) => (
-            <a key={post.slug} href={`/faq/${post.slug}`} className="block p-6 border rounded-xl">
+            <a key={post.slug} href={`/faq/${post.slug}`} className="block p-6 shadow-lg bg-background-elevated rounded-xl">
               <h2 className="text-xl font-semibold">{post.title}</h2>
               <p className="text-sm mt-1">{post.description}</p>
             </a>
