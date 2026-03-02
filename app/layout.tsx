@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: `The Deep Mirror — AI-powered Enneagram assessment that gets more accurate every time`,
-  description: `Get your most accurate Enneagram result through conversational AI. Three sessions, no multiple choice. For leaders who need insights, not just labels.`,
+  title: `The Deep Mirror — AI-powered Enneagram assessment that gets more accurate over time`,
+  description: `Conversational AI Enneagram typing that gets sharper over time. For executives and coaches who need deeper insights than survey-based tools provide.`,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
