@@ -36,7 +36,7 @@ export default function Home() {
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Organization","name":"The Deep Mirror","url":"https://the-deep-mirror.vercel.app"}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"WebSite","name":"The Deep Mirror","url":"https://the-deep-mirror.vercel.app"}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is this different from every other Enneagram test?","acceptedAnswer":{"@type":"Answer","text":"We don't use surveys. At all. Instead of asking you to pick A, B, or C, we have a conversation. When your answers seem to conflict, we notice and dig deeper. When you describe who you want to be instead of who you are, we redirect. Static surveys can't do this because they can't think."}},{"@type":"Question","name":"Why don't you give me a type immediately?","acceptedAnswer":{"@type":"Answer","text":"Because honest typing takes time. You might finish your first session hearing you show strong Type 8 tendencies with meaningful 6 and 2 patterns. That's not failure to type you—that's honesty about how personality actually works. Come back in two weeks after observing yourself, and your next session builds on what we already know."}},{"@type":"Question","name":"What if I've already taken other Enneagram tests?","acceptedAnswer":{"@type":"Answer","text":"Perfect. Tell us what types you've gotten and why they felt incomplete. That gives us crucial data about what resonates and what doesn't. We're not starting from scratch—we're starting from your existing self-knowledge and making it more precise."}},{"@type":"Question","name":"Can I upload my journal entries or notes from other conversations?","acceptedAnswer":{"@type":"Answer","text":"Yes. The more context you give us about how you actually think and behave, the more accurate your result becomes. Upload anything that shows your real patterns—journal entries, notes from therapy, even transcripts from conversations with ChatGPT about yourself."}},{"@type":"Question","name":"How long does a session take?","acceptedAnswer":{"@type":"Answer","text":"Your first conversation typically runs 20-30 minutes. Follow-up sessions are shorter because we already know your patterns. But we never rush. If you're in the middle of exploring something important, we don't cut you off because a timer says stop."}},{"@type":"Question","name":"Do you identify wings and subtypes?","acceptedAnswer":{"@type":"Answer","text":"Yes, with strength indicators. You don't just learn you're an 8—you learn you're an 8 wing 7 with strong self-preservation instincts. We show you how strongly each tendency appears in your responses, so you understand the nuances of how your type manifests."}},{"@type":"Question","name":"What happens to the information I share?","acceptedAnswer":{"@type":"Answer","text":"Your conversations and uploaded content stay with your account and make your future sessions more accurate. We don't share personal information, obviously. The whole point is building a detailed, private model of how your mind works."}},{"@type":"Question","name":"Is this just ChatGPT with Enneagram prompts?","acceptedAnswer":{"@type":"Answer","text":"No. We've trained specifically on Enneagram patterns, typing methodologies, and thousands of hours of actual typing conversations. We know when to push back on your self-description, when to follow a thread deeper, and how to spot the subtle patterns that reveal core motivations."}}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is this different from taking the iEQ9 or other Enneagram tests?","acceptedAnswer":{"@type":"Answer","text":"Static surveys ask predetermined questions in a fixed order. We adapt our questions based on your previous responses. When you describe a leadership challenge, we probe deeper into that specific area. When your answers seem contradictory, we explore why. The iEQ9's conditional logic is impressive for a survey, but conversational AI can follow threads that no predetermined branching logic can anticipate."}},{"@type":"Question","name":"What if I get a different result than I expected?","acceptedAnswer":{"@type":"Answer","text":"That's often where the real insight lives. We don't force you into a single type on your first session. You might hear: 'You're showing strong Type 8 patterns, with meaningful 6 and 2 tendencies. Come back in two weeks and watch for these specific behaviors.' The goal isn't to give you a number. It's to give you a more accurate picture of how you actually operate."}},{"@type":"Question","name":"Can I upload my journal entries or notes from other AI conversations?","acceptedAnswer":{"@type":"Answer","text":"Yes. Context from your existing reflective work makes the assessment more precise. Upload journal entries, notes from coaching sessions, or transcripts from AI conversations where you've explored your patterns. The more material we have about how you actually think and behave, the sharper your result becomes."}},{"@type":"Question","name":"How long does the initial assessment take?","acceptedAnswer":{"@type":"Answer","text":"Plan for 30-45 minutes if you want a thorough result. You can pause and return anytime. Unlike surveys that rush you through predetermined questions, we follow the conversation wherever it needs to go. Some patterns emerge quickly. Others require deeper exploration."}},{"@type":"Question","name":"Do I need to know anything about the Enneagram beforehand?","acceptedAnswer":{"@type":"Answer","text":"No. We'll explain concepts as they become relevant to your specific patterns. If you're already familiar with the system, we can dive deeper into subtypes, wings, and integration paths. The conversation adapts to your level of knowledge."}},{"@type":"Question","name":"How does the result get more accurate over time?","acceptedAnswer":{"@type":"Answer","text":"Each conversation builds on previous sessions. You might initially test as a Type 3 under work stress, then show clear Type 6 patterns during a period of uncertainty. Instead of contradicting your previous result, this adds nuance. You're not switching types. You're revealing the full complexity of your motivational structure."}},{"@type":"Question","name":"Is this suitable for team assessments?","acceptedAnswer":{"@type":"Answer","text":"Individual assessments first, team insights second. Each person needs their own thorough typing before we can analyze team dynamics. We can generate team reports showing interaction patterns, potential conflicts, and communication preferences, but only after everyone has completed their individual assessment process."}},{"@type":"Question","name":"What happens to my conversation data?","acceptedAnswer":{"@type":"Answer","text":"Your responses are stored securely and used only to refine your individual assessment. We don't share personal details or use your data to train models for other users. You own your psychological profile and can export or delete it at any time."}}]}} />
 
       <header className="border-b border-border bg-background-elevated">
         <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
@@ -54,12 +54,12 @@ export default function Home() {
       <main className="flex-1">
         <div className="bg-background-elevated">
         {/* Hero */}
-        <section aria-label="Hero" className="mx-auto max-w-5xl px-6 py-20 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold text-text mb-4 leading-tight">
-            AI Enneagram Assessment
+        <section aria-label="Hero" className="mx-auto max-w-5xl px-6 py-28 text-center">
+          <h1 className="text-4xl sm:text-5xl font-bold text-text mb-6 leading-tight">
+            Your Enneagram result gets sharper over time
           </h1>
-          <p className="text-lg text-text-secondary max-w-2xl mx-auto mb-8">
-            Your type gets more accurate every time you use it. No surveys, just conversation.
+          <p className="text-lg text-text-secondary max-w-2xl mx-auto mb-10">
+            AI-powered assessment that adapts its questions based on your responses, delivering nuanced typing that refines with each conversation.
           </p>
 
           {/* Email Signup */}
@@ -83,7 +83,7 @@ export default function Home() {
                   disabled={status === 'loading'}
                   className="px-6 py-3 bg-primary text-background font-semibold rounded-lg hover:opacity-90 transition-opacity disabled:opacity-50"
                 >
-                  {status === 'loading' ? 'Sending...' : `Start Assessment`}
+                  {status === 'loading' ? 'Sending...' : `Start your assessment`}
                 </button>
               </form>
             )}
@@ -95,71 +95,78 @@ export default function Home() {
         </div>
 
         {/* Problem */}
-        <section aria-label="Problem" className="mx-auto max-w-3xl px-6 py-12">
-          <h2 className="text-2xl font-bold text-text text-center mb-4">
-            Most Enneagram tests give you a number, not insight
+        <section aria-label="Problem" className="mx-auto max-w-3xl px-6 py-16">
+          <h2 className="text-2xl font-bold text-text text-center mb-6">
+            Enneagram assessments give you a number, not understanding
           </h2>
           <p className="text-text-secondary text-center leading-relaxed">
-            You take a survey, answer 144 questions about hypothetical scenarios, and get a type based on whoever scored highest. But real personality doesn't work in multiple choice. The best surveys use basic conditional logic to branch questions, but they still can't follow up when your answers contradict each other or dig deeper when you're clearly describing who you want to be instead of who you are.
+            You take the test, answer 144 questions, get typed as a 3 or an 8, and then what? Static surveys can't probe when your answers contradict each other. They can't ask follow-up questions when you're clearly describing who you want to be instead of who you are. They give you a type based on a single snapshot, but your deepest patterns don't reveal themselves in one sitting.
           </p>
         </section>
 
         <div className="bg-background-elevated">
         {/* Features */}
-        <section aria-label="Features" className="mx-auto max-w-5xl px-6 py-12">
-          <h2 className="text-2xl font-bold text-text text-center mb-8">How The Deep Mirror works differently</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <section aria-label="Dynamic interviewing replaces static surveys" className="shadow-lg bg-background-elevated rounded-xl p-6">
-            <h3 className="text-lg font-semibold text-text mb-2">Dynamic interviewing replaces static surveys</h3>
-            <p className="text-text-secondary text-sm leading-relaxed">The AI asks follow-up questions when your answers conflict or seem rehearsed. It probes deeper when you describe who you want to be instead of who you are, something no survey can catch.</p>
+        <section aria-label="Features" className="mx-auto max-w-5xl px-6 py-16">
+          <h2 className="text-2xl font-bold text-text text-center mb-10">How conversational AI delivers what surveys cannot</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <section aria-label="Adaptive questioning that follows your responses" className="shadow-lg bg-background-elevated rounded-xl p-8">
+            <h3 className="text-lg font-semibold text-text mb-2">Adaptive questioning that follows your responses</h3>
+            <p className="text-text-secondary text-sm leading-relaxed">Instead of fixed questions, the AI probes deeper when your answers reveal contradictions or patterns worth exploring. If you describe yourself as decisive but then explain how you agonize over choices, it asks follow-up questions that static surveys skip entirely.</p>
           </section>
-          <section aria-label="Your context shapes your results" className="shadow-lg bg-background-elevated rounded-xl p-6">
-            <h3 className="text-lg font-semibold text-text mb-2">Your context shapes your results</h3>
-            <p className="text-text-secondary text-sm leading-relaxed">Upload journal entries, performance reviews, or notes from other AI conversations. The assessment incorporates real examples of how you think and behave, not just how you summarize yourself under pressure.</p>
+          <section aria-label="Context integration from your existing reflective work" className="shadow-lg bg-background-elevated rounded-xl p-8">
+            <h3 className="text-lg font-semibold text-text mb-2">Context integration from your existing reflective work</h3>
+            <p className="text-text-secondary text-sm leading-relaxed">Upload journal entries, meeting notes, or AI conversations from other tools to give the assessment material that reflects how you actually think and behave. Your typing becomes based on real examples, not just how you summarize yourself under pressure.</p>
           </section>
-          <section aria-label="Nuanced output beyond just a number" className="shadow-lg bg-background-elevated rounded-xl p-6">
-            <h3 className="text-lg font-semibold text-text mb-2">Nuanced output beyond just a number</h3>
-            <p className="text-text-secondary text-sm leading-relaxed">Get your type, wing, and strength of each tendency. An Eight wing Seven operates completely differently from an Eight wing Nine, and you'll see exactly where you fall on the spectrum.</p>
+          <section aria-label="Wing and subtype precision beyond basic typing" className="shadow-lg bg-background-elevated rounded-xl p-8">
+            <h3 className="text-lg font-semibold text-text mb-2">Wing and subtype precision beyond basic typing</h3>
+            <p className="text-text-secondary text-sm leading-relaxed">Get your core type plus wing tendencies and instinctual variant, with strength indicators for each. An 8w7 social variant operates differently than an 8w9 self-preservation variant, and the assessment captures those meaningful distinctions.</p>
           </section>
-          <section aria-label="Results refine over time" className="shadow-lg bg-background-elevated rounded-xl p-6">
-            <h3 className="text-lg font-semibold text-text mb-2">Results refine over time</h3>
-            <p className="text-text-secondary text-sm leading-relaxed">Each session builds on previous conversations. The AI remembers inconsistencies to explore and patterns to verify, creating a living model of your personality that sharpens with use.</p>
+          <section aria-label="Continuous refinement with each conversation" className="shadow-lg bg-background-elevated rounded-xl p-8">
+            <h3 className="text-lg font-semibold text-text mb-2">Continuous refinement with each conversation</h3>
+            <p className="text-text-secondary text-sm leading-relaxed">Your result sharpens over time as you return with new experiences and insights. The AI remembers your previous responses and asks different questions based on what it learned about your patterns, building a more accurate picture with each session.</p>
           </section>
-          <section aria-label="Handles complexity that breaks surveys" className="shadow-lg bg-background-elevated rounded-xl p-6">
-            <h3 className="text-lg font-semibold text-text mb-2">Handles complexity that breaks surveys</h3>
-            <p className="text-text-secondary text-sm leading-relaxed">When you show strong patterns of multiple types, the AI explores the tension instead of forcing a single answer. It maps how different types show up in different contexts of your life.</p>
+          <section aria-label="Objection handling for conflicting self-perceptions" className="shadow-lg bg-background-elevated rounded-xl p-8">
+            <h3 className="text-lg font-semibold text-text mb-2">Objection handling for conflicting self-perceptions</h3>
+            <p className="text-text-secondary text-sm leading-relaxed">When you describe behaviors that don't align with your stated motivations, the assessment notices and explores the discrepancy. It helps distinguish between who you are, who you think you are, and who you want to be.</p>
           </section>
-          <section aria-label="Built for professional application" className="shadow-lg bg-background-elevated rounded-xl p-6">
-            <h3 className="text-lg font-semibold text-text mb-2">Built for professional application</h3>
-            <p className="text-text-secondary text-sm leading-relaxed">Designed for executives who need accurate self-knowledge for leadership decisions and coaches who require reliable typing for client work. The depth matches the stakes of professional development.</p>
+          <section aria-label="Professional application guidance for teams" className="shadow-lg bg-background-elevated rounded-xl p-8">
+            <h3 className="text-lg font-semibold text-text mb-2">Professional application guidance for teams</h3>
+            <p className="text-text-secondary text-sm leading-relaxed">Understand how your type shows up in leadership decisions, conflict resolution, and team dynamics. Each result includes specific implications for professional relationships and management approaches based on your unique type combination.</p>
           </section>
           </div>
         </section>
         </div>
 
         {/* How It Works */}
-        <section aria-label="How it works" className="mx-auto max-w-3xl px-6 py-12">
-          <h2 className="text-2xl font-bold text-text text-center mb-8">Three steps to your most accurate Enneagram result</h2>
-          <div className="space-y-6">
+        <section aria-label="How it works" className="mx-auto max-w-3xl px-6 py-16">
+          <h2 className="text-2xl font-bold text-text text-center mb-10">How The Deep Mirror works</h2>
+          <div className="space-y-8">
           <div className="flex items-start gap-4">
             <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-background flex items-center justify-center font-bold text-sm">1</div>
             <div>
-              <h3 className="text-lg font-semibold text-text mb-1">Start a conversation</h3>
-              <p className="text-text-secondary text-sm leading-relaxed">The AI interviewer asks about your patterns and motivations. When your answers conflict or seem incomplete, it follows up with better questions. No multiple choice, no predetermined paths.</p>
+              <h3 className="text-lg font-semibold text-text mb-1">Dynamic conversation begins</h3>
+              <p className="text-text-secondary text-sm leading-relaxed">The AI interviewer asks an open-ended question and listens to your full response. No multiple choice, no forced categories. When your answer reveals complexity or contradiction, it follows that thread with a more specific question.</p>
             </div>
           </div>
           <div className="flex items-start gap-4">
             <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-background flex items-center justify-center font-bold text-sm">2</div>
             <div>
-              <h3 className="text-lg font-semibold text-text mb-1">Upload your context</h3>
-              <p className="text-text-secondary text-sm leading-relaxed">Feed in journals, notes, or conversations from other AI tools. The more material that reflects how you actually think and behave, the more precise your result becomes.</p>
+              <h3 className="text-lg font-semibold text-text mb-1">Context shapes the dialogue</h3>
+              <p className="text-text-secondary text-sm leading-relaxed">Upload journals, notes, or reflections from other AI conversations. The interviewer integrates this material into your session, asking questions that connect patterns across your actual thoughts and behaviors.</p>
             </div>
           </div>
           <div className="flex items-start gap-4">
             <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-background flex items-center justify-center font-bold text-sm">3</div>
             <div>
-              <h3 className="text-lg font-semibold text-text mb-1">Return for refinement</h3>
-              <p className="text-text-secondary text-sm leading-relaxed">Your assessment evolves as you do. Each session builds on previous conversations, sharpening your type, wing, and subtype accuracy over time.</p>
+              <h3 className="text-lg font-semibold text-text mb-1">Nuanced results emerge</h3>
+              <p className="text-text-secondary text-sm leading-relaxed">Receive your type, wing, and strength of tendency after your first session. Instead of forcing you into a single box, the assessment acknowledges when multiple types show up strongly in your responses.</p>
+            </div>
+          </div>
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-background flex items-center justify-center font-bold text-sm">4</div>
+            <div>
+              <h3 className="text-lg font-semibold text-text mb-1">Understanding deepens over time</h3>
+              <p className="text-text-secondary text-sm leading-relaxed">Return weeks or months later. The AI remembers your previous responses and asks different questions based on what it learned about you. Your type clarity improves as more context accumulates.</p>
             </div>
           </div>
           </div>
@@ -167,20 +174,20 @@ export default function Home() {
 
         <div className="bg-background-elevated">
         {/* Audience */}
-        <section aria-label="Audience" className="mx-auto max-w-3xl px-6 py-12">
-          <h2 className="text-2xl font-bold text-text text-center mb-4">
-            Built for people who know themselves well enough to know they don't
+        <section aria-label="Audience" className="mx-auto max-w-3xl px-6 py-16">
+          <h2 className="text-2xl font-bold text-text text-center mb-6">
+            Built for people who know the difference between a quiz and real assessment
           </h2>
           <p className="text-text-secondary text-center leading-relaxed">
-            You've taken personality tests before. Maybe you got different results each time, or the right answer felt like none of the above. The Deep Mirror works differently because it knows that self-knowledge isn't multiple choice. Whether you're leading teams, coaching executives, or committed to understanding what drives your decisions, you deserve a tool that matches the complexity of who you actually are.
+            Executives making high-stakes decisions need accurate self-knowledge, not multiple choice guesswork. Executive coaches stake their credibility on tools that deliver genuine insight. HR leaders implementing team development programs require assessments that actually differentiate between people. If you've taken an Enneagram test before and felt the result was partially right but missing something crucial, you understand why conversational AI matters.
           </p>
         </section>
         </div>
 
         {/* Final CTA */}
-        <section aria-label="Final CTA" className="mx-auto max-w-3xl px-6 py-16 text-center">
-          <h2 className="text-3xl font-bold text-text mb-4">Start your first conversation</h2>
-          <p className="text-text-secondary mb-8 max-w-xl mx-auto">No surveys to game. No multiple choice to second-guess. Just you, the AI, and the kind of conversation that actually reveals how you operate.</p>
+        <section aria-label="Final CTA" className="mx-auto max-w-3xl px-6 py-20 text-center">
+          <h2 className="text-3xl font-bold text-text mb-6">Get your real Enneagram type</h2>
+          <p className="text-text-secondary mb-10 max-w-xl mx-auto">Static surveys gave you a number. The Deep Mirror gives you understanding that deepens every time you return.</p>
           <div className="max-w-md mx-auto">
             {status === 'success' ? (
               <div className="bg-primary/10 border border-primary/30 rounded-lg p-4">
@@ -201,7 +208,7 @@ export default function Home() {
                   disabled={status === 'loading'}
                   className="px-6 py-3 bg-primary text-background font-semibold rounded-lg hover:opacity-90 transition-opacity disabled:opacity-50"
                 >
-                  {status === 'loading' ? 'Sending...' : `Begin Assessment`}
+                  {status === 'loading' ? 'Sending...' : `Start assessment`}
                 </button>
               </form>
             )}
@@ -213,71 +220,71 @@ export default function Home() {
 
         <div className="bg-background-elevated">
         {/* FAQ */}
-        <section aria-label="Frequently Asked Questions" className="mx-auto max-w-3xl px-6 py-12">
-          <h2 className="text-2xl font-bold text-text text-center mb-8">Your questions, straight answers</h2>
-          <div className="space-y-6">
+        <section aria-label="Frequently Asked Questions" className="mx-auto max-w-3xl px-6 py-16">
+          <h2 className="text-2xl font-bold text-text text-center mb-10">Questions about how this actually works</h2>
+          <div className="space-y-8">
             <details className="border-b border-border pb-4">
               <summary className="cursor-pointer font-medium text-text py-2">
-                How is this different from every other Enneagram test?
+                How is this different from taking the iEQ9 or other Enneagram tests?
               </summary>
               <p className="text-text-secondary text-sm leading-relaxed mt-2 pl-0">
-                We don't use surveys. At all. Instead of asking you to pick A, B, or C, we have a conversation. When your answers seem to conflict, we notice and dig deeper. When you describe who you want to be instead of who you are, we redirect. Static surveys can't do this because they can't think.
+                Static surveys ask predetermined questions in a fixed order. We adapt our questions based on your previous responses. When you describe a leadership challenge, we probe deeper into that specific area. When your answers seem contradictory, we explore why. The iEQ9's conditional logic is impressive for a survey, but conversational AI can follow threads that no predetermined branching logic can anticipate.
               </p>
             </details>
             <details className="border-b border-border pb-4">
               <summary className="cursor-pointer font-medium text-text py-2">
-                Why don't you give me a type immediately?
+                What if I get a different result than I expected?
               </summary>
               <p className="text-text-secondary text-sm leading-relaxed mt-2 pl-0">
-                Because honest typing takes time. You might finish your first session hearing you show strong Type 8 tendencies with meaningful 6 and 2 patterns. That's not failure to type you—that's honesty about how personality actually works. Come back in two weeks after observing yourself, and your next session builds on what we already know.
+                That's often where the real insight lives. We don't force you into a single type on your first session. You might hear: 'You're showing strong Type 8 patterns, with meaningful 6 and 2 tendencies. Come back in two weeks and watch for these specific behaviors.' The goal isn't to give you a number. It's to give you a more accurate picture of how you actually operate.
               </p>
             </details>
             <details className="border-b border-border pb-4">
               <summary className="cursor-pointer font-medium text-text py-2">
-                What if I've already taken other Enneagram tests?
+                Can I upload my journal entries or notes from other AI conversations?
               </summary>
               <p className="text-text-secondary text-sm leading-relaxed mt-2 pl-0">
-                Perfect. Tell us what types you've gotten and why they felt incomplete. That gives us crucial data about what resonates and what doesn't. We're not starting from scratch—we're starting from your existing self-knowledge and making it more precise.
+                Yes. Context from your existing reflective work makes the assessment more precise. Upload journal entries, notes from coaching sessions, or transcripts from AI conversations where you've explored your patterns. The more material we have about how you actually think and behave, the sharper your result becomes.
               </p>
             </details>
             <details className="border-b border-border pb-4">
               <summary className="cursor-pointer font-medium text-text py-2">
-                Can I upload my journal entries or notes from other conversations?
+                How long does the initial assessment take?
               </summary>
               <p className="text-text-secondary text-sm leading-relaxed mt-2 pl-0">
-                Yes. The more context you give us about how you actually think and behave, the more accurate your result becomes. Upload anything that shows your real patterns—journal entries, notes from therapy, even transcripts from conversations with ChatGPT about yourself.
+                Plan for 30-45 minutes if you want a thorough result. You can pause and return anytime. Unlike surveys that rush you through predetermined questions, we follow the conversation wherever it needs to go. Some patterns emerge quickly. Others require deeper exploration.
               </p>
             </details>
             <details className="border-b border-border pb-4">
               <summary className="cursor-pointer font-medium text-text py-2">
-                How long does a session take?
+                Do I need to know anything about the Enneagram beforehand?
               </summary>
               <p className="text-text-secondary text-sm leading-relaxed mt-2 pl-0">
-                Your first conversation typically runs 20-30 minutes. Follow-up sessions are shorter because we already know your patterns. But we never rush. If you're in the middle of exploring something important, we don't cut you off because a timer says stop.
+                No. We'll explain concepts as they become relevant to your specific patterns. If you're already familiar with the system, we can dive deeper into subtypes, wings, and integration paths. The conversation adapts to your level of knowledge.
               </p>
             </details>
             <details className="border-b border-border pb-4">
               <summary className="cursor-pointer font-medium text-text py-2">
-                Do you identify wings and subtypes?
+                How does the result get more accurate over time?
               </summary>
               <p className="text-text-secondary text-sm leading-relaxed mt-2 pl-0">
-                Yes, with strength indicators. You don't just learn you're an 8—you learn you're an 8 wing 7 with strong self-preservation instincts. We show you how strongly each tendency appears in your responses, so you understand the nuances of how your type manifests.
+                Each conversation builds on previous sessions. You might initially test as a Type 3 under work stress, then show clear Type 6 patterns during a period of uncertainty. Instead of contradicting your previous result, this adds nuance. You're not switching types. You're revealing the full complexity of your motivational structure.
               </p>
             </details>
             <details className="border-b border-border pb-4">
               <summary className="cursor-pointer font-medium text-text py-2">
-                What happens to the information I share?
+                Is this suitable for team assessments?
               </summary>
               <p className="text-text-secondary text-sm leading-relaxed mt-2 pl-0">
-                Your conversations and uploaded content stay with your account and make your future sessions more accurate. We don't share personal information, obviously. The whole point is building a detailed, private model of how your mind works.
+                Individual assessments first, team insights second. Each person needs their own thorough typing before we can analyze team dynamics. We can generate team reports showing interaction patterns, potential conflicts, and communication preferences, but only after everyone has completed their individual assessment process.
               </p>
             </details>
             <details className="border-b border-border pb-4">
               <summary className="cursor-pointer font-medium text-text py-2">
-                Is this just ChatGPT with Enneagram prompts?
+                What happens to my conversation data?
               </summary>
               <p className="text-text-secondary text-sm leading-relaxed mt-2 pl-0">
-                No. We've trained specifically on Enneagram patterns, typing methodologies, and thousands of hours of actual typing conversations. We know when to push back on your self-description, when to follow a thread deeper, and how to spot the subtle patterns that reveal core motivations.
+                Your responses are stored securely and used only to refine your individual assessment. We don't share personal details or use your data to train models for other users. You own your psychological profile and can export or delete it at any time.
               </p>
             </details>
           </div>
